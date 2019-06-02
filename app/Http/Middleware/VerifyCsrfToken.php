@@ -20,5 +20,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        '127.0.0.1:8000/api/*'
     ];
 }
