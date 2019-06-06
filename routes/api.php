@@ -31,6 +31,7 @@ Route::group(['middleware' => 'cors'], function()
     Route::get('reparaciones/{matricula}/fecha/{fecha}/desrepara/{desrepara}', 'RepationsController@getAllForMatriculaAndFechaAndDesrepara')->name('getAllForMatriculaAndFechaAndDesrepara');
     Route::post('reparaciones/{id}', 'RepationsController@editById')->name('editReparationsById');
     Route::get('reparaciones/delete/{id}', 'RepationsController@deleteById')->name('deleteReparationsById');
+	
 
 });
 
